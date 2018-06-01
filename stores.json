@@ -1,6 +1,6 @@
 [
-  {"bangalore":["Parkstreet,550 Avenue, 54668","Lavelle Road, 664 post, 568576"]},
-  {"chennai":["Mg road, 63335","Amjigari, 58798"]},
-  {"mumbai":["Dongri, 69799","Dharavi, 57653"]},
-  {"delhi":["Chandini Chowk,47988","Sultan bazar,58798"]}
+  {"city":"bangalore","places":["Parkstreet,550 Avenue, 54668","Lavelle Road, 664 post, 568576"]},
+  {"city":"chennai","places":["Mg road, 63335","Amjigari, 58798"]},
+  {"city":"mumbai","places":["Dongri, 69799","Dharavi, 57653"]},
+  {"city":"delhi","places":["Chandini Chowk,47988","Sultan bazar,58798"]}
 ]
