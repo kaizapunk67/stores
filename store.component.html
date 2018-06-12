@@ -1,0 +1,28 @@
+<div mat-dialog-content>
+    <p>Enter Your City Name</p>
+    <div class="form-group">
+        <mat-form-field>
+          <input type="text" matInput class="formControl" [formControl]="name" [matAutocomplete]="auto" >
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of cityFilteredOptions  | async" [value]="option" >
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+    <!-- <div *ngFor="let option of stores">
+      {{option.city}}
+    </div> -->
+    
+  </div>
+  <div *ngIf ="(locLength!=0)">
+      <div *ngFor="let x of locations; let i = index">
+      {{i+1}}.{{x}}
+      <br>
+      </div>
+    </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Close</button>
+    <button mat-button  (click)="onNoClick2(name.value)" cdkFocusInitial>Ok</button>
+</div>
+
